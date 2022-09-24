@@ -7,4 +7,9 @@ export class TodoService {
     public static async getTodos(){
         return Todo.find();
     }
+
+    public static async deleteTodos(id:any) {
+        const todo = await Todo.deleteOne({_id: id})
+        console.log("deleted ", todo)
+    }
 }

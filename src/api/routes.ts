@@ -1,5 +1,5 @@
 import express from "express";
-import {getTodos} from "../controllers/todo.controller";
+import {getTodos, deleteTodos} from "../controllers/todo.controller";
 const router = express.Router();
 
 router.put('/ping', (req, res)=>{
@@ -7,5 +7,6 @@ router.put('/ping', (req, res)=>{
 })
 
 router.get('/todos', getTodos)
+router.delete('/todos', deleteTodos)
 
 export default router;
