@@ -16,8 +16,12 @@ mongoose.connect(DB_URL).then(()=>{
 });
 /*
 async function createTodo(){
-    const todo = new Todo({description: 'Pay bills'})
-    await todo.save()
-    console.log(todo)
+    const todo1 = new Todo({description: 'Water plants'})
+    await todo1.save()
+    const todo2 = new Todo({description: 'Pay bills'})
+    await todo2.save()
+    const todo3 = new Todo({description: 'Feed the dog'})
+    await todo3.save()
 }
+createTodo()
 */
