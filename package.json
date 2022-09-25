@@ -10,6 +10,8 @@
   "author": "Helena Rosenzweig",
   "license": "ISC",
   "dependencies": {
+    "@sentry/node": "^7.13.0",
+    "@sentry/tracing": "^7.13.0",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",

@@ -10,4 +10,10 @@ router.post('/todos', createTodos)
 router.get('/todos', getTodos)
 router.delete('/todos', deleteTodos)
 
+// test route for sentry
+router.get("/debug-sentry", function mainHandler(req, res) {
+    throw new Error("My first Sentry error!");
+});
+
+
 export default router;
