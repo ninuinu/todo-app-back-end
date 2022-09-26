@@ -22,12 +22,10 @@ export async function deleteTodos(req:Request, res:Response){
 
 export async function createTodos(req:Request, res:Response){
     try{
-        console.log(req.query)
         const description = req.query.description
         await TodoService.createTodos(description);
         res.status(200).send("todo created");
     } catch(error){
-        console.log(error)
         res.status(404).send("could not find todo")
     }
 }
