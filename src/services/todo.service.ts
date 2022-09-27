@@ -1,9 +1,9 @@
 import Todo from '../model/schema/todo.schema';
+import isEmpty from '../util/isEmpty';
 
 export class TodoService {
 
-    static todoRepository = Todo;
-
+    // get todos in reverse order
     public static async getTodos(){
         return Todo.find().sort({"createdAt": -1});
     }
@@ -14,7 +14,8 @@ export class TodoService {
     }
 
     public static async createTodos(description:any) {
-        if(description===""){
+        console.log(description)
+        if(isEmpty(description)){
             throw Error("empty string")
         }
         const todo = new Todo({description: description})
