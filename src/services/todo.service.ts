@@ -1,5 +1,5 @@
 import Todo from '../model/schema/todo.schema';
-import isEmpty from '../util/isEmpty';
+import isEmpty from '../utils/isEmpty';
 
 export class TodoService {
 
