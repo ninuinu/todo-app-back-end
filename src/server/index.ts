@@ -10,7 +10,7 @@ import path from "path";
 
 dotenv.config();
 
-const app = express()
+export const app = express()
 app.use(express.static('public'))
 app.use(bodyParser.json());
 
