@@ -30,5 +30,6 @@ The server supports three endpoints:
 * Node Express server
 * Typescript
 * MondoDB Atlas database
+* Jest for testing
 * Sentry for logging
 * Heroku for deployment
